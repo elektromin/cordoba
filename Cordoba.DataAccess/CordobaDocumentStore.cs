@@ -34,7 +34,9 @@ namespace Cordoba.DataAccess
         {
             using (var session = this.documentStore.OpenSession())
             {
-                return session.Query<ChangeRequest>().Where(cr => cr.Duration.StartTime <= DateTime.Now && DateTime.Now <= cr.Duration.EndTime).ToList();
+                return session.Query<ChangeRequest>().Where(
+                    cr => cr.Status == CRStatus.Approved && cr.Duration.StartTime <= DateTime.Now && DateTime.Now <= cr.Duration.EndTime).
+                    ToList();
             }
         }
     }

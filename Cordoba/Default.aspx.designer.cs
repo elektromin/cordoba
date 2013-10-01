@@ -49,6 +49,15 @@ namespace Cordoba {
         protected global::System.Web.UI.WebControls.TextBox CustomerService;
         
         /// <summary>
+        /// Status control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Status;
+        
+        /// <summary>
         /// Submit control.
         /// </summary>
         /// <remarks>

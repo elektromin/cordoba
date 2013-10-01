@@ -20,6 +20,7 @@
     Beskrivning: <asp:TextBox ID="Description" runat="server"></asp:TextBox><br/>
     Kund: <asp:TextBox ID="CustomerName" runat="server" /><br />
     Tjänst: <asp:TextBox ID="CustomerService" runat="server" /><br />
+    Status: <asp:DropDownList ID="Status" runat="server"/><br />
     <asp:Button ID="Submit" runat="server" Text="Skapa" OnClick="Submit_Click"/>
     <asp:Label ID="CreateResult" runat="server"/>
 
@@ -32,6 +33,7 @@
             <asp:BoundField DataField="Duration.StartTime" HeaderText="Starttid" />
             <asp:BoundField DataField="Duration.EndTime" HeaderText="Sluttid" />
             <asp:BoundField DataField="AffectedCustomers.Count" HeaderText="Antal kunder" />
+            <asp:BoundField DataField="Status" HeaderText="Status" />
         </Columns>
     </asp:GridView>
 </asp:Content>
