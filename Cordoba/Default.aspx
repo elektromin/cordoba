@@ -18,6 +18,8 @@
     <h3>Skapa ärende</h3>
     Titel: <asp:TextBox ID="Heading" runat="server"></asp:TextBox><br/>
     Beskrivning: <asp:TextBox ID="Description" runat="server"></asp:TextBox><br/>
+    Kund: <asp:TextBox ID="CustomerName" runat="server" /><br />
+    Tjänst: <asp:TextBox ID="CustomerService" runat="server" /><br />
     <asp:Button ID="Submit" runat="server" Text="Skapa" OnClick="Submit_Click"/>
     <asp:Label ID="CreateResult" runat="server"/>
 
@@ -29,6 +31,7 @@
             <asp:BoundField DataField="Description" HeaderText="Beskrivning" />
             <asp:BoundField DataField="Duration.StartTime" HeaderText="Starttid" />
             <asp:BoundField DataField="Duration.EndTime" HeaderText="Sluttid" />
+            <asp:BoundField DataField="AffectedCustomers.Count" HeaderText="Antal kunder" />
         </Columns>
     </asp:GridView>
 </asp:Content>
