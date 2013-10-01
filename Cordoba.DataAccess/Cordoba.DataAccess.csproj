@@ -46,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ChangeRequest.cs" />
+    <Compile Include="CordobaDocumentStore.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="TimePeriod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
